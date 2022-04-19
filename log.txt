@@ -1,0 +1,147 @@
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  a=e 
+minpath:  ['', '', '', '', '', '', '']
+result:  ['a', 'e'] 	required:  ['a']
+	 not doable
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  b=d 
+minpath:  ['', '', '', '', '', '', '']
+result:  ['b', 'd'] 	required:  ['b']
+	 not doable
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  h=a 
+minpath:  ['', '', '', '', '', '', '']
+result:  ['h', 'a'] 	required:  ['h']
+result:  ['a', 'e'] 	required:  ['a']
+result:  ['a', 'e'] 	required:  ['a']
+turned  e  to blank because it already exists in  ['h', 'k', 'a', 'e']
+			 not doable
+		 ['h', 'k', 'a', 'e'] rule[0]:  a=e [2, 0]
+result:  ['b', 'd'] 	required:  ['b']
+			 not doable
+		 ['h', 'k', 'a', 'e'] rule[1]:  b=d [2, 0]
+result:  ['h', 'a'] 	required:  ['h']
+turned  a  to blank because it already exists in  ['h', 'k', 'a', 'e']
+			 not doable
+		 ['h', 'k', 'a', 'e'] rule[2]:  h=a [2, 0]
+result:  ['e,g', 'c'] 	required:  ['e', 'g']
+			 not doable
+		 ['h', 'k', 'a', 'e'] rule[3]:  e,g=c [2, 0]
+result:  ['e,k', 'b'] 	required:  ['e', 'k']
+result:  ['a', 'e'] 	required:  ['a']
+turned  e  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b']
+				 not doable
+			 ['h', 'k', 'a', 'e', 'b'] rule[0]:  a=e [2, 0, 4]
+result:  ['b', 'd'] 	required:  ['b']
+result:  ['a', 'e'] 	required:  ['a']
+turned  e  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd']
+					 not doable
+				 ['h', 'k', 'a', 'e', 'b', 'd'] rule[0]:  a=e [2, 0, 4, 1]
+result:  ['b', 'd'] 	required:  ['b']
+turned  d  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd']
+					 not doable
+				 ['h', 'k', 'a', 'e', 'b', 'd'] rule[1]:  b=d [2, 0, 4, 1]
+result:  ['h', 'a'] 	required:  ['h']
+turned  a  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd']
+					 not doable
+				 ['h', 'k', 'a', 'e', 'b', 'd'] rule[2]:  h=a [2, 0, 4, 1]
+result:  ['e,g', 'c'] 	required:  ['e', 'g']
+					 not doable
+				 ['h', 'k', 'a', 'e', 'b', 'd'] rule[3]:  e,g=c [2, 0, 4, 1]
+result:  ['e,k', 'b'] 	required:  ['e', 'k']
+turned  b  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd']
+					 not doable
+				 ['h', 'k', 'a', 'e', 'b', 'd'] rule[4]:  e,k=b [2, 0, 4, 1]
+result:  ['d,e,k', 'c'] 	required:  ['d', 'e', 'k']
+found it  [2, 0, 4, 1, 5]
+				 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[5]:  d,e,k=c [2, 0, 4, 1, 5]
+new path selected:
+ [2, 0, 4, 1, 5]  length(path)= 5 
+ ['', '', '', '', '', '', '']  length(minpath)=  7
+			 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[1]:  b=d [2, 0, 4, 1, 5]
+result:  ['h', 'a'] 	required:  ['h']
+turned  a  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+				 not doable
+			 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[2]:  h=a [2, 0, 4, 1, 5]
+result:  ['e,g', 'c'] 	required:  ['e', 'g']
+				 not doable
+			 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[3]:  e,g=c [2, 0, 4, 1, 5]
+result:  ['e,k', 'b'] 	required:  ['e', 'k']
+turned  b  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+				 not doable
+			 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[4]:  e,k=b [2, 0, 4, 1, 5]
+result:  ['d,e,k', 'c'] 	required:  ['d', 'e', 'k']
+turned  c  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+				 not doable
+			 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[5]:  d,e,k=c [2, 0, 4, 1, 5]
+result:  ['g,k,f', 'a'] 	required:  ['g', 'k', 'f']
+				 not doable
+			 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[6]:  g,k,f=a [2, 0, 4, 1, 5]
+		 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[4]:  e,k=b ['na3rch 3lik ya bro']
+result:  ['d,e,k', 'c'] 	required:  ['d', 'e', 'k']
+turned  c  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+			 not doable
+		 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[5]:  d,e,k=c ['na3rch 3lik ya bro']
+result:  ['g,k,f', 'a'] 	required:  ['g', 'k', 'f']
+			 not doable
+		 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[6]:  g,k,f=a ['na3rch 3lik ya bro']
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[0]:  a=e ['na3rch 3lik ya bro']
+result:  ['b', 'd'] 	required:  ['b']
+turned  d  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+		 not doable
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[1]:  b=d ['na3rch 3lik ya bro']
+result:  ['h', 'a'] 	required:  ['h']
+turned  a  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+		 not doable
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[2]:  h=a ['na3rch 3lik ya bro']
+result:  ['e,g', 'c'] 	required:  ['e', 'g']
+		 not doable
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[3]:  e,g=c ['na3rch 3lik ya bro']
+result:  ['e,k', 'b'] 	required:  ['e', 'k']
+turned  b  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+		 not doable
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[4]:  e,k=b ['na3rch 3lik ya bro']
+result:  ['d,e,k', 'c'] 	required:  ['d', 'e', 'k']
+turned  c  to blank because it already exists in  ['h', 'k', 'a', 'e', 'b', 'd', 'c']
+		 not doable
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[5]:  d,e,k=c ['na3rch 3lik ya bro']
+result:  ['g,k,f', 'a'] 	required:  ['g', 'k', 'f']
+		 not doable
+	 ['h', 'k', 'a', 'e', 'b', 'd', 'c'] rule[6]:  g,k,f=a ['na3rch 3lik ya bro']
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  e,g=c 
+minpath:  [2, 0, 4, 1, 5]
+result:  ['e,g', 'c'] 	required:  ['e', 'g']
+	 not doable
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  e,k=b 
+minpath:  [2, 0, 4, 1, 5]
+result:  ['e,k', 'b'] 	required:  ['e', 'k']
+	 not doable
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  d,e,k=c 
+minpath:  [2, 0, 4, 1, 5]
+result:  ['d,e,k', 'c'] 	required:  ['d', 'e', 'k']
+	 not doable
+
+-------------------------------------------------------------------------------------------------
+base:  ['h', 'k'] 
+rule:  g,k,f=a 
+minpath:  [2, 0, 4, 1, 5]
+result:  ['g,k,f', 'a'] 	required:  ['g', 'k', 'f']
+	 not doable
+
+
+minpath=  [2, 0, 4, 1, 5]
