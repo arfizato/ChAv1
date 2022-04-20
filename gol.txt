@@ -1,0 +1,692 @@
+----------------------------------------------------------------
+Rule0: k,l,m=i 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ~~~Jeni Feregh q k,l,m=i
+----------------------------------------------------------------
+Rule1: i,l,j=q 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ######## i ['i', 'l', 'j'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: i 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ######## l ['l', 'm'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+		 -------------
+ 		 newRequest: l 
+ 		 Rule0: k,l,m=i 
+ 		 path: []
+			 ~~~Jeni Feregh l k,l,m=i
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule1: i,l,j=q 
+ 		 path: []
+			 ~~~Jeni Feregh l i,l,j=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule2: c,d,e,l=b 
+ 		 path: []
+			 ~~~Jeni Feregh l c,d,e,l=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule3: a,b=q 
+ 		 path: []
+			 ~~~Jeni Feregh l a,b=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule4: l,n,o,p=q 
+ 		 path: []
+			 ~~~Jeni Feregh l l,n,o,p=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule5: c,h=r 
+ 		 path: []
+			 ~~~Jeni Feregh l c,h=r
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule6: r,j,m=s 
+ 		 path: []
+			 ~~~Jeni Feregh l r,j,m=s
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule7: f,h=b 
+ 		 path: []
+			 ~~~Jeni Feregh l f,h=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule8: g=f 
+ 		 path: []
+			 ~~~Jeni Feregh l g=f
+		 Failed: True 	 newPath: []
+		 ######## m ['l', 'm'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+		 -------------
+ 		 newRequest: m 
+ 		 Rule0: k,l,m=i 
+ 		 path: []
+			 ~~~Jeni Feregh m k,l,m=i
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule1: i,l,j=q 
+ 		 path: []
+			 ~~~Jeni Feregh m i,l,j=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule2: c,d,e,l=b 
+ 		 path: []
+			 ~~~Jeni Feregh m c,d,e,l=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule3: a,b=q 
+ 		 path: []
+			 ~~~Jeni Feregh m a,b=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule4: l,n,o,p=q 
+ 		 path: []
+			 ~~~Jeni Feregh m l,n,o,p=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule5: c,h=r 
+ 		 path: []
+			 ~~~Jeni Feregh m c,h=r
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule6: r,j,m=s 
+ 		 path: []
+			 ~~~Jeni Feregh m r,j,m=s
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule7: f,h=b 
+ 		 path: []
+			 ~~~Jeni Feregh m f,h=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: m 
+ 		 Rule8: g=f 
+ 		 path: []
+			 ~~~Jeni Feregh m g=f
+		 Failed: True 	 newPath: []
+\\\\\famma mochkel
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh i i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh i c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh i a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh i l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh i c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh i r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh i f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: i 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh i g=f
+	 Failed: True 	 newPath: []
+	 ######## l ['i', 'l', 'j'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: l 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh l k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh l i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh l c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh l a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh l l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh l c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh l r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh l f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh l g=f
+	 Failed: True 	 newPath: []
+	 ######## j ['i', 'l', 'j'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: j 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh j k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh j i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh j c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh j a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh j l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh j c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh j r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh j f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: j 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh j g=f
+	 Failed: True 	 newPath: []
+\\\\\famma mochkel
+----------------------------------------------------------------
+Rule2: c,d,e,l=b 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ~~~Jeni Feregh q c,d,e,l=b
+----------------------------------------------------------------
+Rule3: a,b=q 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ######## b ['b'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: b 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh b k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh b i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ######## l ['l'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+		 -------------
+ 		 newRequest: l 
+ 		 Rule0: k,l,m=i 
+ 		 path: []
+			 ~~~Jeni Feregh l k,l,m=i
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule1: i,l,j=q 
+ 		 path: []
+			 ~~~Jeni Feregh l i,l,j=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule2: c,d,e,l=b 
+ 		 path: []
+			 ~~~Jeni Feregh l c,d,e,l=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule3: a,b=q 
+ 		 path: []
+			 ~~~Jeni Feregh l a,b=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule4: l,n,o,p=q 
+ 		 path: []
+			 ~~~Jeni Feregh l l,n,o,p=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule5: c,h=r 
+ 		 path: []
+			 ~~~Jeni Feregh l c,h=r
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule6: r,j,m=s 
+ 		 path: []
+			 ~~~Jeni Feregh l r,j,m=s
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule7: f,h=b 
+ 		 path: []
+			 ~~~Jeni Feregh l f,h=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: l 
+ 		 Rule8: g=f 
+ 		 path: []
+			 ~~~Jeni Feregh l g=f
+		 Failed: True 	 newPath: []
+\\\\\famma mochkel
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh b a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh b l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh b c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh b r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: b 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ######## f ['f'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+		 -------------
+ 		 newRequest: f 
+ 		 Rule0: k,l,m=i 
+ 		 path: []
+			 ~~~Jeni Feregh f k,l,m=i
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule1: i,l,j=q 
+ 		 path: []
+			 ~~~Jeni Feregh f i,l,j=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule2: c,d,e,l=b 
+ 		 path: []
+			 ~~~Jeni Feregh f c,d,e,l=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule3: a,b=q 
+ 		 path: []
+			 ~~~Jeni Feregh f a,b=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule4: l,n,o,p=q 
+ 		 path: []
+			 ~~~Jeni Feregh f l,n,o,p=q
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule5: c,h=r 
+ 		 path: []
+			 ~~~Jeni Feregh f c,h=r
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule6: r,j,m=s 
+ 		 path: []
+			 ~~~Jeni Feregh f r,j,m=s
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule7: f,h=b 
+ 		 path: []
+			 ~~~Jeni Feregh f f,h=b
+		 Failed: True 	 newPath: []
+		 -------------
+ 		 newRequest: f 
+ 		 Rule8: g=f 
+ 		 path: []
+			 <<<<<<<<<<request= f 
+ 			 Rule= g=f 
+ 			 path: [] 8 )
+		 Failed: False 	 newPath: [8]
+		 ::found f from Rule8: g=f 
+ 		 ::Added to path: [8, 7]
+	 Failed: False 	 newPath: [8, 7]
+	 ::found b from Rule7: f,h=b 
+ 	 ::Added to path: [8, 7, 3]
+New Minpath: [8, 7, 3] ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------------
+Rule4: l,n,o,p=q 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ######## l ['l', 'n', 'o', 'p'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: l 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh l k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh l i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh l c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh l a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh l l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh l c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh l r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh l f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: l 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh l g=f
+	 Failed: True 	 newPath: []
+	 ######## n ['l', 'n', 'o', 'p'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: n 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh n k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh n i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh n c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh n a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh n l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh n c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh n r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh n f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: n 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh n g=f
+	 Failed: True 	 newPath: []
+	 ######## o ['l', 'n', 'o', 'p'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: o 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh o k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh o i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh o c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh o a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh o l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh o c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh o r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh o f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: o 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh o g=f
+	 Failed: True 	 newPath: []
+	 ######## p ['l', 'n', 'o', 'p'] 	Base: ['a', 'c', 'd', 'e', 'g', 'h', 'k']
+	 -------------
+ 	 newRequest: p 
+ 	 Rule0: k,l,m=i 
+ 	 path: []
+		 ~~~Jeni Feregh p k,l,m=i
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule1: i,l,j=q 
+ 	 path: []
+		 ~~~Jeni Feregh p i,l,j=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule2: c,d,e,l=b 
+ 	 path: []
+		 ~~~Jeni Feregh p c,d,e,l=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule3: a,b=q 
+ 	 path: []
+		 ~~~Jeni Feregh p a,b=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule4: l,n,o,p=q 
+ 	 path: []
+		 ~~~Jeni Feregh p l,n,o,p=q
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule5: c,h=r 
+ 	 path: []
+		 ~~~Jeni Feregh p c,h=r
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule6: r,j,m=s 
+ 	 path: []
+		 ~~~Jeni Feregh p r,j,m=s
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule7: f,h=b 
+ 	 path: []
+		 ~~~Jeni Feregh p f,h=b
+	 Failed: True 	 newPath: []
+	 -------------
+ 	 newRequest: p 
+ 	 Rule8: g=f 
+ 	 path: []
+		 ~~~Jeni Feregh p g=f
+	 Failed: True 	 newPath: []
+\\\\\famma mochkel
+----------------------------------------------------------------
+Rule5: c,h=r 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ~~~Jeni Feregh q c,h=r
+----------------------------------------------------------------
+Rule6: r,j,m=s 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ~~~Jeni Feregh q r,j,m=s
+----------------------------------------------------------------
+Rule7: f,h=b 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ~~~Jeni Feregh q f,h=b
+----------------------------------------------------------------
+Rule8: g=f 	Request: q 	base: ['a', 'c', 'd', 'e', 'g', 'h', 'k'] 
+	 ~~~Jeni Feregh q g=f
+.
+.
+.
+minpath:  [8, 7, 3] 
+
+file and function name in reverse get it? cause this is backwards chaining 9adechni dhamer 

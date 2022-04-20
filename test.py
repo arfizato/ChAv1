@@ -1,3 +1,4 @@
-input = "a=b"
-result= input.split("=")
-print(result[0].split(","))
+print("aaaa")
+print("\taaaa")
+print("bbbb")
+print("\tcccccc\ncccccc")
