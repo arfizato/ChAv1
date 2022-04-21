@@ -1,8 +1,9 @@
 # ChAv1
 ## forward chaining
 execute tree.py
-![Imgur](https://imgur.com/RFIo10l)
+![img](https://i.imgur.com/RFIo10l.jpg)
+![img](https://i.imgur.com/YlVNbgf.jpg)
 
 ## backwards chaining
 execute eert.py
-![Imgur](https://imgur.com/PTcB45g)
+![img](https://i.imgur.com/PTcB45g.jpg)
