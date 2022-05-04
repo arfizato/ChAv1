@@ -2,14 +2,14 @@
 import sys
 
 
-base= ["a","c","d","e","g","h","k"]
-request = "q"
-rules =["k,l,m=i", "i,l,j=q", "c,d,e,l=b","a,b=q", "l,n,o,p=q","c,h=r","r,j,m=s","f,h=b","g=f"]
+# base= ["a","c","d","e","g","h","k"]
+# request = "q"
+# rules =["k,l,m=i", "i,l,j=q", "c,d,e=b","a,b=q", "l,n,o,p=q","c,h=r","r,j,m=s","f,h=b","g=f"]
 
 #second example 
-# base= ["h","k"]
-# request = "c"
-# rules =["a=e","b=d","h=a","e,g=c","e,k=b","d,e,k=c","g,k,f=a"]
+base= ["h","k"]
+request = "c"
+rules =["a=e","b=d","h=a","e,g=c","e,k=b","d,e,k=c","g,k,f=a"]
 
 minpath=[""]*len(rules)
 
@@ -61,7 +61,7 @@ def eerThcraes(request,index,path,thisBase,indent):
                         "Rule"+str(rules.index(r))+":",r,"\n",indent,
                         "path:",path
                         )
-                path,failed= eerThcraes(newRequest,rules.index(r),path,thisBase,indent+"\t")
+                path,failed= eerThcraes(newRequest,rules.index(r),path,thisBase[:],indent+"\t")
 
                 print(indent,"Failed:",failed,"\t","newPath:",path)
 
@@ -91,7 +91,7 @@ for a in rules:
     print ("----------------------------------------------------------------")
     print("Rule"+str(rules.index(a)) +":",a,"\tRequest:",request,"\tbase:",base,"")
 
-    path, failed= eerThcraes(request, rules.index(a), [],["a","c","d","e","g","h","k"],"\t")
+    path, failed= eerThcraes(request, rules.index(a), [],base[:],"\t")
 
     if not failed and len(path)<len(minpath) : 
         print ("New Minpath:",path,"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
